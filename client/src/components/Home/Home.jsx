@@ -12,11 +12,11 @@ export default function Home() {
             <OurService />
             <LastTreeFruits />
             <TestyFruits />
-            <ContactUs />
+            {/* <ContactUs /> */}
             {/* <section className="map_section">
                 <div id="map" className="h-100 w-100 "></div>
             </section> */}
-            <SiteMap />
+            {/* <SiteMap /> */}
         </>
     );
 }
