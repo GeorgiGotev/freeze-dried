@@ -12,6 +12,7 @@ import Register from './components/Register/Register';
 import Logout from './components/Logout/Logout';
 import Fruits from './components/Catalog/Fruits';
 import FruitDetails from './components/DetailsFruit/fruitDetails';
+import CreateFruit from './components/CreateFruit/CreateFruit';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                         <Route path="/login" element={<Login />}></Route>
                         <Route path="/register" element={<Register />}></Route>
                         <Route path="/catalog" element={<Fruits />}></Route>
+                        <Route path="/create" element={<CreateFruit />}></Route>
                         <Route path="/catalog/:fruitId/details" element={<FruitDetails />}></Route>
                         <Route path="/contacts" element={<ContactUs />}></Route>
                         <Route path="/logout" element={<Logout />} />

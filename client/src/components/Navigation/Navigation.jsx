@@ -55,7 +55,7 @@ export default function Navigation(props) {
                         {isAuthenticated && (
                             <>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/contacts">
+                                    <Link className="nav-link" to="/create">
                                         Add product
                                     </Link>
                                 </li>
