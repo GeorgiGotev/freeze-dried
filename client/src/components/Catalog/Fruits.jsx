@@ -16,7 +16,11 @@ export default function Fruits() {
                 {fruits.map((x) => (
                     <Fruit key={x._id} {...x} />
                 ))}
-                {fruits.length === 0 && <h3>No fruits yet</h3>}
+                {fruits.length === 0 && (
+                    <div>
+                        <h2 className="custom_heading">No fruits yet</h2>
+                    </div>
+                )}
             </div>
         </section>
     );

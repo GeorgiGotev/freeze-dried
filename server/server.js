@@ -1339,6 +1339,39 @@
     	}
     };
     var seedData = {
+        fruits: {
+            '1840a313-225c-416a-817a-9954d4609f7c': {
+                _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
+                name: 'Apple',
+                imageUrl:
+                    'https://freezedried.bg/wp-content/uploads/2022/11/zelena_yabalka.webp',
+                description:
+                    "Uncover the intriguing tale of the shortest war in history!The Anglo-Zanzibar War of 1896 lasted a mere 38 minutes,making it an astonishingly brief conflict that's sure to leaveyou amazed by the brevity of battle.",
+                moreInfo:
+                    "The Anglo-Zanzibar War, which occurred on August 27, 1896, goes down in history asthe shortest recorded war. It lasted a mere 38 minutes!The conflict erupted when Sultan Khalid bin Barghash of Zanzibar refused to step down after the death of his predecessor.British warships bombarded the palace, quickly overwhelmingthe sultan's forces and forcing his surrender. This incrediblepiece of history serves as a reminder of how swiftly eventscan unfold, leaving a lasting impact in the annals of time.",
+                _createdOn: 1617194210928,
+            },
+            '126777f5-3277-42ad-b874-76d043b069cb': {
+                _ownerId: '847ec027-f659-4086-8032-5173e2f9c93a',
+                name: 'Banana',
+                imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/6/QN/CU/QE/74581666/dehydrated-banana-powder-500x500-500x500.jpg',
+                description:
+                    "Did you know that the Earth's oceans contain enough salt to cover all the continents in a layer 500 feet thick? Dive into the depths of this salty fact and explore the wonders of our planet's aquatic wonders.",
+                moreInfo:
+                    "The oceans of our planet hold a staggering amount of salt. In fact, if you were to extract all the salt from the oceans and spread it evenly over the Earth's landmass, it would create a layer approximately 500 feet thick! This mind-boggling fact highlights the vastness and richness of Earth's marine environment. Dive deeper into the world of oceanography to explore the intricate ecosystems, fascinating creatures, and the importance of preserving our precious seas.",
+                _createdOn: 1617194295474,
+            },
+            '136777f5-3277-42ad-b874-76d043b069cb': {
+                _ownerId: '847ec027-f659-4086-8032-5173e2f9c93a',
+                name: 'Strawberries',
+                imageUrl: 'https://www.medikonda.com/cdn/shop/products/Strawberry-Powder_3744239f-8580-497c-a725-e2af4b147394_600x.jpg?v=1671204791',
+                description:
+                    'Prepare to be astounded by the power of hummingbirds!These tiny marvels can flap their wings up to 80 times per second,enabling them to hover, fly backward, and even upside down.Discover more about these delightful creatures and theirextraordinary abilities.',
+                moreInfo:
+                    'Hummingbirds are truly remarkable creatures. With their incredible agility and unique flying abilities, they capture our imagination. These tiny birds can flap their wings at an astonishing rate of up to 80 times per second! This rapid wing movement allows them to hover in mid-air, fly backward, and even upside down. Their ability to defy gravity and maneuver with such precision is a marvel of nature. Delve into the world of ornithology to explore the diversity and extraordinary adaptations of these delightful avian wonders.',
+                _createdOn: 1617194295480,
+            },
+        },
     	recipes: {
     		"3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
