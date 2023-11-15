@@ -13,6 +13,7 @@ import Logout from './components/Logout/Logout';
 import Fruits from './components/Catalog/Fruits';
 import FruitDetails from './components/DetailsFruit/fruitDetails';
 import CreateFruit from './components/CreateFruit/CreateFruit';
+import OurService from './components/OurService/OurService';
 
 function App() {
     return (
@@ -25,9 +26,10 @@ function App() {
                         <Route path="/login" element={<Login />}></Route>
                         <Route path="/register" element={<Register />}></Route>
                         <Route path="/catalog" element={<Fruits />}></Route>
-                        <Route path="/create" element={<CreateFruit />}></Route>
                         <Route path="/catalog/:fruitId/details" element={<FruitDetails />}></Route>
+                        <Route path="/create" element={<CreateFruit />}></Route>
                         <Route path="/contacts" element={<ContactUs />}></Route>
+                        <Route path="/service" element={<OurService />}></Route>
                         <Route path="/logout" element={<Logout />} />
                     </Routes>
                     <Footer />

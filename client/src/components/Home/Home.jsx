@@ -1,5 +1,5 @@
 import Fruits from '../Catalog/Fruits';
-import OurService from '../OurService';
+import OurService from '../OurService/OurService';
 import SiteMap from '../SiteMap';
 import TestyFruits from '../Catalog/TastyFruits';
 import ContactUs from '../ContactUs';

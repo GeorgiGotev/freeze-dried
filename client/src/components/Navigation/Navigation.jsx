@@ -41,10 +41,10 @@ export default function Navigation(props) {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="service.html">
+                            <Link className="nav-link" to="/service">
                                 {' '}
                                 Services{' '}
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/contacts">

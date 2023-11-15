@@ -8,6 +8,7 @@ body {
 
 .layout_padding {
     padding: 75px 0;
+    margin-bottom: 50px;
 }
 
 .layout_padding2 {
@@ -475,9 +476,10 @@ a:focus {
     background-color: #efeded;
     padding: 20px 0;
     font-family: 'Roboto', sans-serif;
-    margin-top: auto;
+    /* margin-top: 20px; */
+    /* margin-bottom: -30px; */
     bottom: 0;
-    position: absolute;
+    position:absolute;
 }
 
 .footer_section p {
@@ -491,3 +493,6 @@ a:focus {
 }
 
 /* end footer section*/
+.fruit_detail-box {
+    margin-bottom: 25px;
+}
