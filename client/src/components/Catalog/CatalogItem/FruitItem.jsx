@@ -16,9 +16,9 @@ export const Fruit = ({
                             <p className="mt-4 mb-5">
                                 {description}
                             </p>
-                            <p className="mt-4 mb-5">
+                            {/* <p className="mt-4 mb-5">
                                 {moreInfo}
-                            </p>
+                            </p> */}
                             <div>
                                 <Link to={`/catalog/${_id}/details`} className="custom_dark-btn">
                                     Details
