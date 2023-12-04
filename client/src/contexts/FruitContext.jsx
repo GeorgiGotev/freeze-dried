@@ -32,7 +32,7 @@ export const FruitProvider = ({
 
         setFruits(state => state.map(x => x._id === values._id ? result : x))
 
-        navigate(`/catalog/${values._id}`);
+        navigate(`/catalog/${values._id}/details`);
     };
 
     const deleteFruit = (fruitId) => {

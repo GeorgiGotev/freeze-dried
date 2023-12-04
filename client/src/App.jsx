@@ -14,6 +14,7 @@ import Fruits from './components/Catalog/Fruits';
 import FruitDetails from './components/DetailsFruit/fruitDetails';
 import CreateFruit from './components/CreateFruit/CreateFruit';
 import OurService from './components/OurService/OurService';
+import EditFruit from './components/EditFruit/EditFruit';
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                         <Route path="/register" element={<Register />}></Route>
                         <Route path="/catalog" element={<Fruits />}></Route>
                         <Route path="/catalog/:fruitId/details" element={<FruitDetails />}></Route>
+                        <Route path="/catalog/:fruitId/edit" element={<EditFruit />}></Route>
                         <Route path="/create" element={<CreateFruit />}></Route>
                         <Route path="/contacts" element={<ContactUs />}></Route>
                         <Route path="/service" element={<OurService />}></Route>

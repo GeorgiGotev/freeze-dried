@@ -1,22 +1,35 @@
-import { useFruitContext } from '../../contexts/FruitContext';
-import { useForm } from '../../hooks/useForm';
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-export default function CreateFruit() {
-    const { onCreateFruitSubmit } = useFruitContext();
-    const { values, changeHandler, onSubmit } = useForm(
-        {
-            name: '',
-            imageUrl: '',
-            description: '',
-            moreInfo: '',
-        },
-        onCreateFruitSubmit
-    );
+import { useFruitContext } from "../../contexts/FruitContext";
+import { useForm } from "../../hooks/useForm";
+import { useService } from "../../hooks/useService";
+import { fruitServiceFactory } from "../../services/fruitService";
+
+export default function EditFruit(){
+    const { onFruitEditSubmit } = useFruitContext();
+    const { fruitId } = useParams();
+    const fruitService = useService(fruitServiceFactory);
+
+    const { values, changeHandler, onSubmit, changeValues } = useForm({
+        _id: '',
+        name: '',
+        description: '',
+        imageUrl: '',
+        moreInfo: '',
+    }, onFruitEditSubmit);
+
+    useEffect(() => {
+        fruitService.getOne(fruitId)
+            .then(result => {
+                changeValues(result);
+            });
+    }, [fruitId]);
 
     return (
         <section className="contact_section layout_padding">
             <div className="container">
-                <h2 className="font-weight-bold">Create product</h2>
+                <h2 className="font-weight-bold">Edit product</h2>
                 <div className="row">
                     <div className="col-md-8 mr-auto">
                         <form action="POST" onSubmit={onSubmit}>
@@ -69,4 +82,5 @@ export default function CreateFruit() {
             </div>
         </section>
     );
+
 }
