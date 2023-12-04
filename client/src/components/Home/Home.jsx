@@ -1,4 +1,4 @@
-import Fruits from '../Catalog/Fruits';
+import LastTreeFruits from '../Catalog/LastTreeFruits';
 import OurService from '../OurService/OurService';
 import SiteMap from '../SiteMap';
 import TestyFruits from '../Catalog/TastyFruits';
@@ -10,7 +10,7 @@ export default function Home(props) {
         <>
             <Headers />
             <OurService />
-            <Fruits />
+            <LastTreeFruits />
             <TestyFruits />
             <ContactUs />
             {/* <section className="map_section">

@@ -59,7 +59,7 @@ export default function FruitDetails() {
                                         Delete
                                     </button>
                                 </div>
-                            )};
+                            )}
                         </div>
                     </div>
                     <div className="col-md-4 d-flex justify-content-center align-items-center">

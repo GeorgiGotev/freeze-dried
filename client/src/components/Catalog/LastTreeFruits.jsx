@@ -13,7 +13,7 @@ export default function Fruits() {
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have
                 </p>
-                {fruits.map((x) => (
+                {fruits.slice(-3).map((x) => (
                     <Fruit key={x._id} {...x} />
                 ))}
                 {fruits.length === 0 && (
