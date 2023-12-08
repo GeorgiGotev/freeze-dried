@@ -1351,9 +1351,9 @@
                 imageUrl:
                     'https://freezedried.bg/wp-content/uploads/2022/11/zelena_yabalka.webp',
                 description:
-                    "Uncover the intriguing tale of the shortest war in history!The Anglo-Zanzibar War of 1896 lasted a mere 38 minutes,making it an astonishingly brief conflict that's sure to leaveyou amazed by the brevity of battle.",
+                    "Enjoy the perfect tartness of fresh picked apples without the hassle of washing, slicing and peeling. You’ll love them right out of the can or added to your favorite recipes like muffins or apple crisp.",
                 moreInfo:
-                    "The Anglo-Zanzibar War, which occurred on August 27, 1896, goes down in history asthe shortest recorded war. It lasted a mere 38 minutes!The conflict erupted when Sultan Khalid bin Barghash of Zanzibar refused to step down after the death of his predecessor.British warships bombarded the palace, quickly overwhelmingthe sultan's forces and forcing his surrender. This incrediblepiece of history serves as a reminder of how swiftly eventscan unfold, leaving a lasting impact in the annals of time.",
+                    "With an optimal amount of nutrients and servings per can, these delicious bulk freeze-dried apples are easy to store long-term and simple to rehydrate. Nutristore Fuji Apples are ideal for healthy snacks, lightweight DIY camping/backpacking, or survival situations. The perfect addition to your emergency survival food storage. Simply create an instant snack or try adding to smoothies, cereal, trail mix, or travel food. Just add water and enjoy!",
                 _createdOn: 1617194210928,
             },
             '126777f5-3277-42ad-b874-76d043b069cb': {
@@ -1361,9 +1361,9 @@
                 name: 'Banana',
                 imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/6/QN/CU/QE/74581666/dehydrated-banana-powder-500x500-500x500.jpg',
                 description:
-                    "Did you know that the Earth's oceans contain enough salt to cover all the continents in a layer 500 feet thick? Dive into the depths of this salty fact and explore the wonders of our planet's aquatic wonders.",
+                    "You'll love banana chips in so many ways. They're a sweet and crispy snack, a delicious addition to trail mix, and a sweet topper for hot oatmeal and ice cream. With this kind of versatility and flavor, they are perfect for both everyday use and long term food storage. Unopened shelf life up to 10 years, recipes on can label.",
                 moreInfo:
-                    "The oceans of our planet hold a staggering amount of salt. In fact, if you were to extract all the salt from the oceans and spread it evenly over the Earth's landmass, it would create a layer approximately 500 feet thick! This mind-boggling fact highlights the vastness and richness of Earth's marine environment. Dive deeper into the world of oceanography to explore the intricate ecosystems, fascinating creatures, and the importance of preserving our precious seas.",
+                    "Our freeze dried bananas are deliciously crunchy and wonderfully addictive. Not only do these sweet bites come from USA based companies, they are also Non-GMO, with no preservatives or additives. Our freeze dried bananas retain up to 94% of its ‘fresh’ nutritional value, and are a delightful addition to any trail mix for your morning hike, smoothie additive, or a snack option for an on-the-go man, woman or child. Our freeze dried bananas are high quality freeze dried by reputable food manufacturers around the USA. They are also kosher, and packaged carefully by hand for optimum quality, care, and freshness.",
                 _createdOn: 1617194295474,
             },
             '136777f5-3277-42ad-b874-76d043b069cb': {
@@ -1371,9 +1371,9 @@
                 name: 'Strawberries',
                 imageUrl: 'https://www.medikonda.com/cdn/shop/products/Strawberry-Powder_3744239f-8580-497c-a725-e2af4b147394_600x.jpg?v=1671204791',
                 description:
-                    'Prepare to be astounded by the power of hummingbirds!These tiny marvels can flap their wings up to 80 times per second,enabling them to hover, fly backward, and even upside down.Discover more about these delightful creatures and theirextraordinary abilities.',
+                    'These soft freeze-dried strawberries are so healthy and delicious. They are simply strawberries. We do not add any sweeteners or preservatives. Just the natural sweet taste of fresh strawberries. These freeze-dried strawberries are some of the only strawberries available without added sweeteners. These freeze-dried strawberries are similar to those you might know from your morning cereal.',
                 moreInfo:
-                    'Hummingbirds are truly remarkable creatures. With their incredible agility and unique flying abilities, they capture our imagination. These tiny birds can flap their wings at an astonishing rate of up to 80 times per second! This rapid wing movement allows them to hover in mid-air, fly backward, and even upside down. Their ability to defy gravity and maneuver with such precision is a marvel of nature. Delve into the world of ornithology to explore the diversity and extraordinary adaptations of these delightful avian wonders.',
+                    'Our Registered Dietitian and Health Nut is on the go a lot and she likes to bring snacks with her for busy days. Freeze-dried strawberries are one of her favorites because they have only 31 calories and a full 3 grams of belly filling fiber per serving. She also likes to add these simply strawberries to muffins, salads, pancakes, cereal, and trail mix.',
                 _createdOn: 1617194295480,
             },
         },
