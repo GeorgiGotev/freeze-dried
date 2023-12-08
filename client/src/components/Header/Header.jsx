@@ -90,32 +90,16 @@ export default function Header(props) {
                                                             Our Services
                                                         </h1>
                                                         <p>
-                                                            There are many
-                                                            variations of
-                                                            passages of Lorem
-                                                            Ipsum available, but
-                                                            the majority have
-                                                            suffered alteration
-                                                            in some form, by
-                                                            injected humour, or
-                                                            randomised words
-                                                            which don't look
-                                                            even slightly
-                                                            believable.
+                                                        We offer a wide range of freeze-dried fruits, which you can view at the link below
                                                         </p>
                                                         <div className="d-flex">
-                                                            <a
-                                                                href=""
+                                                            <Link
+                                                                to="/service"
                                                                 className="text-uppercase custom_orange-btn mr-3"
                                                             >
-                                                                Shop Now
-                                                            </a>
-                                                            <a
-                                                                href=""
-                                                                className="text-uppercase custom_dark-btn"
-                                                            >
-                                                                Contact Us
-                                                            </a>
+                                                                Read More
+                                                            </Link>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,7 +108,7 @@ export default function Header(props) {
                                                 <div className="slider_img-box">
                                                     <div>
                                                         <img
-                                                            src="images/The-picture-shows-a-sample-of-freeze-dried-fruits.webp"
+                                                            src="images/_MG_1272-2.png"
                                                             alt=""
                                                             className=""
                                                         />
@@ -136,65 +120,7 @@ export default function Header(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="carousel-item">
-                            <div className="slider_item-box">
-                                <div className="slider_item-container">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <div className="slider_item-detail">
-                                                    <div>
-                                                        <h1>
-                                                            Welcome to <br />
-                                                            Our Fruits Shop
-                                                        </h1>
-                                                        <p>
-                                                            There are many
-                                                            variations of
-                                                            passages of Lorem
-                                                            Ipsum available, but
-                                                            the majority have
-                                                            suffered alteration
-                                                            in some form, by
-                                                            injected humour, or
-                                                            randomised words
-                                                            which don't look
-                                                            even slightly
-                                                            believable.
-                                                        </p>
-                                                        <div className="d-flex">
-                                                            <a
-                                                                href=""
-                                                                className="text-uppercase custom_orange-btn mr-3"
-                                                            >
-                                                                Shop Now
-                                                            </a>
-                                                            <a
-                                                                href=""
-                                                                className="text-uppercase custom_dark-btn"
-                                                            >
-                                                                Contact Us
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="slider_img-box">
-                                                    <div>
-                                                        <img
-                                                            src="images/slide-img.png"
-                                                            alt=""
-                                                            className=""
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                     <div className="custom_carousel-control">
                         <a
