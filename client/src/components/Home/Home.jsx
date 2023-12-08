@@ -5,7 +5,7 @@ import TestyFruits from '../Catalog/TastyFruits';
 import ContactUs from '../ContactUs';
 import Headers from '../Header/Header';
 
-export default function Home(props) {
+export default function Home() {
     return (
         <>
             <Headers />
