@@ -9,10 +9,10 @@ export default function Fruits() {
         <section className="fruit_section">
             <div className="container">
                 <h2 className="custom_heading">Fresh Fruits</h2>
-                <p className="custom_heading-text">
+                {/* <p className="custom_heading-text">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have
-                </p>
+                </p> */}
                 {fruits.map((x) => (
                     <Fruit key={x._id} {...x} />
                 ))}

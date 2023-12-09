@@ -46,17 +46,18 @@ export default function Navigation(props) {
                                 Services{' '}
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/contacts">
-                                Contact us
-                            </Link>
-                        </li>
 
                         {isAuthenticated && (
                             <>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/create">
                                         Add product
+                                    </Link>
+                                </li>
+
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/profile">
+                                        Profile
                                     </Link>
                                 </li>
 

@@ -29,21 +29,7 @@ export default function Header(props) {
                                                             Our Fruits Shop
                                                         </h1>
                                                         <p>
-                                                            Preserve your garden
-                                                            produce, create the
-                                                            perfect emergency
-                                                            food supply, make
-                                                            camping meals and
-                                                            healthy snacks.
-                                                            Unlike other methods
-                                                            of food
-                                                            preservation, freeze
-                                                            drying does not
-                                                            shrink or toughen
-                                                            the food, and
-                                                            retains flavor,
-                                                            color, and
-                                                            nutrition.
+                                                        Freeze drying fruit is a process used to preserve fresh produce so it will be shelf-stable and last longer without preservatives. The goal of freeze-drying fruit is to preserve its nutritional profile. Freeze-dried fruit can be used as a healthy snack, to add sweetness to dishes, and in baking.
                                                         </p>
                                                         <div className="d-flex">
                                                             <Link

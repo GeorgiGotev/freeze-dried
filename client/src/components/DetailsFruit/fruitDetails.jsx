@@ -60,6 +60,16 @@ export default function FruitDetails() {
                                     </button>
                                 </div>
                             )}
+                            {!isOwner && (
+                                <div>
+                                    <button
+                                        className="custom_dark-btn"
+                                        onClick={onDeleteClick}
+                                    >
+                                        Buy
+                                    </button>
+                                </div>
+                            )}
                         </div>
                     </div>
                     <div className="col-md-4 d-flex justify-content-center align-items-center">

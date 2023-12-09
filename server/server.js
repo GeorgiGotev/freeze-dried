@@ -1346,7 +1346,7 @@
     var seedData = {
         fruits: {
             '1840a313-225c-416a-817a-9954d4609f7c': {
-                _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
+                _ownerId: '60f0cf0b-34b0-4abd-9769-8c42f830dff3',
                 name: 'Apple',
                 imageUrl:
                     'https://freezedried.bg/wp-content/uploads/2022/11/zelena_yabalka.webp',
