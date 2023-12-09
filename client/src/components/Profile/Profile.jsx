@@ -10,7 +10,6 @@ export default function Profile() {
     const { userId,userEmail } = useAuthContext();
 
     let ownFruits = fruits.filter((x) => x._ownerId == userId);
-    console.log(userId);
 
     return (
         <>

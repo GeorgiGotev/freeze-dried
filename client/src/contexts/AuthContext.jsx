@@ -6,13 +6,11 @@ import { authServiceFactory } from '../services/authService';
 
 export const AuthContext = createContext();
 
-export const AuthProvider = ({
-    children,
-}) => {
+export const AuthProvider = ({ children }) => {
     const [auth, setAuth] = useLocalStorage('auth', {});
     const navigate = useNavigate();
 
-    const authService = authServiceFactory(auth.accessToken)
+    const authService = authServiceFactory(auth.accessToken);
 
     const onLoginSubmit = async (data) => {
         try {
@@ -49,10 +47,16 @@ export const AuthProvider = ({
         setAuth({});
     };
 
+    const onBought = async (productId) => {
+        await auth.boughtProducts.push(productId);
+    };
+
     const contextValues = {
         onLoginSubmit,
         onRegisterSubmit,
         onLogout,
+        onBought,
+        auth,
         userId: auth._id,
         token: auth.accessToken,
         userEmail: auth.email,

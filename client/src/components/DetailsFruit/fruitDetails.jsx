@@ -9,7 +9,8 @@ import { useAuthContext } from '../../contexts/AuthContext';
 export default function FruitDetails() {
     const { fruitId } = useParams();
     const [fruit, setFruit] = useState({});
-    const { userId } = useAuthContext();
+    const [boughtState, setBoughtState] = useState(false);
+    const { userId, auth, onBought } = useAuthContext();
     const fruitService = useService(fruitServiceFactory);
     const { deleteFruit } = useFruitContext();
     const navigate = useNavigate();
@@ -18,7 +19,16 @@ export default function FruitDetails() {
         fruitService.getOne(fruitId).then((result) => {
             setFruit(result);
         });
+        if (auth.boughtProducts.some((x) => x == fruit._id)) {
+            setBoughtState(true);
+        }
     }, [fruitId]);
+
+    useEffect(() => {
+        if (auth.boughtProducts.some((x) => x == fruit._id)) {
+            setBoughtState(true);
+        }
+    });
 
     const isOwner = fruit._ownerId === userId;
 
@@ -33,6 +43,10 @@ export default function FruitDetails() {
 
             navigate('/catalog');
         }
+    };
+    const onBoughtClick = async () => {
+        onBought(fruit._id);
+        setBoughtState(true);
     };
 
     return (
@@ -60,15 +74,24 @@ export default function FruitDetails() {
                                     </button>
                                 </div>
                             )}
-                            {!isOwner && (
+                            {!isOwner && !boughtState && (
                                 <div>
                                     <button
                                         className="custom_dark-btn"
-                                        onClick={onDeleteClick}
+                                        onClick={onBoughtClick}
                                     >
                                         Buy
                                     </button>
                                 </div>
+                            )}
+                            {boughtState && (
+                                <>
+                                    <div>
+                                        <button className="custom_dark-btn">
+                                            Purchased
+                                        </button>
+                                    </div>
+                                </>
                             )}
                         </div>
                     </div>

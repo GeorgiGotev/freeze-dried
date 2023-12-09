@@ -1322,22 +1322,26 @@
     		"35c62d76-8152-4626-8712-eeb96381bea8": {
     			email: "peter@abv.bg",
     			username: "Peter",
-    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
+    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1",
+                boughtProducts: [],
     		},
     		"847ec027-f659-4086-8032-5173e2f9c93a": {
     			email: "george@abv.bg",
     			username: "George",
-    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
+    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1",
+                boughtProducts: [],
     		},
     		"60f0cf0b-34b0-4abd-9769-8c42f830dffc": {
     			email: "admin@abv.bg",
     			username: "Admin",
-    			hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302"
+    			hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302",
+                boughtProducts: [],
     		},
             "60f0cf0b-34b0-4abd-9769-8c42f830dff3": {
     			email: "g.gotev@abv.bg",
     			username: "George",
-    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
+    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1",
+                boughtProducts: [],
     		}
     	},
     	sessions: {
@@ -1359,6 +1363,7 @@
             '126777f5-3277-42ad-b874-76d043b069cb': {
                 _ownerId: '847ec027-f659-4086-8032-5173e2f9c93a',
                 name: 'Banana',
+                bought: false,
                 imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/6/QN/CU/QE/74581666/dehydrated-banana-powder-500x500-500x500.jpg',
                 description:
                     "You'll love banana chips in so many ways. They're a sweet and crispy snack, a delicious addition to trail mix, and a sweet topper for hot oatmeal and ice cream. With this kind of versatility and flavor, they are perfect for both everyday use and long term food storage. Unopened shelf life up to 10 years, recipes on can label.",

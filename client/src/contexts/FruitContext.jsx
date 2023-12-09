@@ -5,24 +5,21 @@ import { fruitServiceFactory } from '../services/fruitService';
 
 export const FruitContext = createContext();
 
-export const FruitProvider = ({
-    children,
-}) => {
+export const FruitProvider = ({ children }) => {
     const navigate = useNavigate();
     const [fruits, setFruits] = useState([]);
     const fruitService = fruitServiceFactory();
 
     useEffect(() => {
-        fruitService.getAll()
-            .then(result => {
-                setFruits(result)
-            })
+        fruitService.getAll().then((result) => {
+            setFruits(result);
+        });
     }, []);
 
     const onCreateFruitSubmit = async (data) => {
         const newFruit = await fruitService.create(data);
 
-        setFruits(state => [...state, newFruit]);
+        setFruits((state) => [...state, newFruit]);
 
         navigate('/catalog');
     };
@@ -30,17 +27,24 @@ export const FruitProvider = ({
     const onFruitEditSubmit = async (values) => {
         const result = await fruitService.edit(values._id, values);
 
-        setFruits(state => state.map(x => x._id === values._id ? result : x))
+        setFruits((state) =>
+            state.map((x) => (x._id === values._id ? result : x))
+        );
 
         navigate(`/catalog/${values._id}/details`);
     };
 
     const deleteFruit = (fruitId) => {
-        setFruits(state => state.filter(fruit => fruit._id !== fruitId));
+        setFruits((state) => state.filter((fruit) => fruit._id !== fruitId));
     };
 
     const getFruit = (fruitId) => {
-        return fruits.find(fruit => fruit._id === fruitId);
+        return fruits.find((fruit) => fruit._id === fruitId);
+    };
+
+    const onFruitBoughtClick = async (fruit) => {
+        result = await fruitService.edit(fruit._id, { ...fruit, bought: true });
+        return result;
     };
 
     const contextValues = {
@@ -49,6 +53,7 @@ export const FruitProvider = ({
         onFruitEditSubmit,
         deleteFruit,
         getFruit,
+        onFruitBoughtClick,
     };
 
     return (
