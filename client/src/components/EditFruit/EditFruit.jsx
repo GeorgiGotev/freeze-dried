@@ -27,6 +27,9 @@ export default function EditFruit(){
             });
     }, [fruitId]);
 
+    
+
+
     return (
         <section className="contact_section layout_padding">
             <div className="container">

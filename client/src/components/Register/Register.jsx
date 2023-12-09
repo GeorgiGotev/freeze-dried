@@ -1,20 +1,60 @@
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 import { useForm } from '../../hooks/useForm';
 import { AuthContext } from '../../contexts/AuthContext';
-import style from '../Register/Register.module.css';
+import styles from '../Register/Register.module.css';
 
 export default function Register() {
-
     const { onRegisterSubmit } = useContext(AuthContext);
-    const { values, changeHandler, onSubmit } = useForm({
-        username: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
-        boughtProducts: [],
-    }, onRegisterSubmit);
+    const [errors, setErrors] = useState({});
+
+    const { values, changeHandler, onSubmit } = useForm(
+        {
+            username: '',
+            email: '',
+            password: '',
+            confirmPassword: '',
+            boughtProducts: [],
+        },
+        onRegisterSubmit
+    );
+
+    const passwordValidator = () => {
+        if (values.password.length < 6) {
+            setErrors((state) => ({
+                ...state,
+                password: 'Password should be at least 6 characters',
+            }));
+        } else {
+            if (errors.password) {
+                setErrors((state) => ({ ...state, password: '' }));
+            }
+        }
+    };
+
+    const rePasswordValidator = () => {
+        if (values.password !== values.confirmPassword) {
+          setErrors((state) => ({
+            ...state,
+            confirmPassword: "Passwords don't match!",
+          }));
+        } else {
+          if (errors.confirmPassword) {
+            setErrors((state) => ({ ...state, confirmPassword: "" }));
+          }
+        }
+        if (values.confirmPassword.length < 6) {
+          setErrors((state) => ({
+            ...state,
+            confirmPassword: "Repeat password should be at least 6 characters",
+          }));
+        } else {
+          if (errors.confirmPassword) {
+            setErrors((state) => ({ ...state, confirmPassword: "" }));
+          }
+        }
+      };
 
     return (
         <section className="contact_section layout_padding">
@@ -26,7 +66,12 @@ export default function Register() {
                             <div className="contact_form-container">
                                 <div>
                                     <div>
-                                    <label className={style.label} htmlFor="userName">Name</label>
+                                        <label
+                                            className={styles.label}
+                                            htmlFor="userName"
+                                        >
+                                            Name
+                                        </label>
                                         <input
                                             type="text"
                                             name="username"
@@ -36,7 +81,12 @@ export default function Register() {
                                         />
                                     </div>
                                     <div>
-                                    <label className={style.label} htmlFor="email">Email address</label>
+                                        <label
+                                            className={styles.label}
+                                            htmlFor="email"
+                                        >
+                                            Email address
+                                        </label>
 
                                         <input
                                             type="email"
@@ -47,7 +97,12 @@ export default function Register() {
                                         />
                                     </div>
                                     <div>
-                                    <label className={style.label} htmlFor="password">Password</label>
+                                        <label
+                                            className={styles.label}
+                                            htmlFor="password"
+                                        >
+                                            Password
+                                        </label>
 
                                         <input
                                             type="password"
@@ -55,10 +110,21 @@ export default function Register() {
                                             placeholder="Password"
                                             value={values.password}
                                             onChange={changeHandler}
+                                            onBlur={passwordValidator}
                                         />
+                                        {errors.password && (
+                                            <p className={styles.errors}>
+                                                {errors.password}
+                                            </p>
+                                        )}
                                     </div>
                                     <div>
-                                    <label className={style.label} htmlFor="re-Pass">Repeat password</label>
+                                        <label
+                                            className={styles.label}
+                                            htmlFor="re-Pass"
+                                        >
+                                            Repeat password
+                                        </label>
 
                                         <input
                                             type="password"
@@ -66,7 +132,13 @@ export default function Register() {
                                             placeholder="Repeat-password"
                                             value={values.confirmPassword}
                                             onChange={changeHandler}
+                                            onBlur={rePasswordValidator}
                                         />
+                                        {errors.confirmPassword && (
+                                            <p className={styles.errors}>
+                                                {errors.confirmPassword}
+                                            </p>
+                                        )}
                                     </div>
 
                                     <div className="mt-5">

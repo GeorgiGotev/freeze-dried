@@ -1,9 +1,11 @@
 import { useFruitContext } from '../../contexts/FruitContext';
 import { useForm } from '../../hooks/useForm';
 import styles from '../CreateFruit/CreateFruit.module.css';
+import { useState } from "react";
 
 export default function CreateFruit() {
     const { onCreateFruitSubmit } = useFruitContext();
+    const [errors, setErrors] = useState({});
     const { values, changeHandler, onSubmit } = useForm(
         {
             name: '',

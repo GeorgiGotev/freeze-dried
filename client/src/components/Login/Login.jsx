@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from "react";
 
 import { useAuthContext } from '../../contexts/AuthContext';
 import { useForm } from '../../hooks/useForm';
@@ -7,6 +8,7 @@ import style from '../Login/Login.module.css'
 
 export default function Login () {
     const { onLoginSubmit } = useAuthContext();
+    const [passwordError, setPasswordError] = useState('');
     const { values, changeHandler, onSubmit } = useForm(
         {
             email: '',
@@ -14,6 +16,14 @@ export default function Login () {
         },
         onLoginSubmit
     );
+
+    const passwordValidator = () => {
+        if (values.password.length < 6) {
+          setPasswordError('Password should be at least 6 characters')
+        } else {
+          setPasswordError('')
+        }
+      }
 
     return (
         <section className="contact_section layout_padding">
@@ -42,7 +52,9 @@ export default function Login () {
                                             name='password'
                                             value={values.password}
                                             onChange={changeHandler}
+                                            onBlur={passwordValidator}
                                         />
+                                        {setPasswordError && <p className={style.errors}>{passwordError}</p>}
                                     </div>
 
                                     <div className="mt-5">
