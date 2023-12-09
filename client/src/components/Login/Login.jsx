@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useAuthContext } from '../../contexts/AuthContext';
 import { useForm } from '../../hooks/useForm';
 
+import style from '../Login/Login.module.css'
+
 export default function Login () {
     const { onLoginSubmit } = useAuthContext();
     const { values, changeHandler, onSubmit } = useForm(
@@ -23,6 +25,7 @@ export default function Login () {
                             <div className="contact_form-container">
                                 <div>
                                     <div>
+                                        <label className={style.label} htmlFor="email">Email</label>
                                         <input
                                             type="email"
                                             placeholder="Email"
@@ -32,6 +35,7 @@ export default function Login () {
                                         />
                                     </div>
                                     <div>
+                                    <label className={style.label} htmlFor="password">Password</label>
                                         <input
                                             type="password"
                                             placeholder="Password"

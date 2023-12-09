@@ -19,16 +19,17 @@ export default function FruitDetails() {
         fruitService.getOne(fruitId).then((result) => {
             setFruit(result);
         });
-        if (auth.boughtProducts.some((x) => x == fruit._id)) {
-            setBoughtState(true);
-        }
+        
     }, [fruitId]);
-
-    useEffect(() => {
-        if (auth.boughtProducts.some((x) => x == fruit._id)) {
-            setBoughtState(true);
-        }
-    });
+    
+    if(userId){
+        useEffect(() => {
+            if (auth.boughtProducts.some((x) => x == fruit._id)) {
+                setBoughtState(true);
+            }
+        });
+    }
+    
 
     const isOwner = fruit._ownerId === userId;
 
@@ -74,7 +75,7 @@ export default function FruitDetails() {
                                     </button>
                                 </div>
                             )}
-                            {!isOwner && !boughtState && (
+                            {userId && !isOwner && !boughtState && (
                                 <div>
                                     <button
                                         className="custom_dark-btn"

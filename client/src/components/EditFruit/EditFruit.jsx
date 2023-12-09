@@ -5,6 +5,7 @@ import { useFruitContext } from "../../contexts/FruitContext";
 import { useForm } from "../../hooks/useForm";
 import { useService } from "../../hooks/useService";
 import { fruitServiceFactory } from "../../services/fruitService";
+import styles from "../EditFruit/EditFruit.module.css";
 
 export default function EditFruit(){
     const { onFruitEditSubmit } = useFruitContext();
@@ -36,6 +37,7 @@ export default function EditFruit(){
                             <div className="contact_form-container">
                                 <div>
                                     <div>
+                                        <label className={styles.label} htmlFor="name">Fruit Name</label>
                                         <input
                                             type="text"
                                             name="name"
@@ -45,6 +47,7 @@ export default function EditFruit(){
                                         />
                                     </div>
                                     <div>
+                                        <label className={styles.label} htmlFor="imageUrl">Image Url</label>
                                         <input
                                             type="text"
                                             name='imageUrl'
@@ -54,6 +57,8 @@ export default function EditFruit(){
                                         />
                                     </div>
                                     <div>
+                                    <label className={styles.label} htmlFor="description">Description</label>
+
                                         <input
                                             type="text"
                                             name='description'
@@ -63,6 +68,8 @@ export default function EditFruit(){
                                         />
                                     </div>
                                     <div>
+                                    <label className={styles.label} htmlFor="moreInfo">More Information</label>
+
                                         <input
                                             type="text"
                                             name='moreInfo'

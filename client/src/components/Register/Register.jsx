@@ -3,6 +3,7 @@ import { useContext } from 'react';
 
 import { useForm } from '../../hooks/useForm';
 import { AuthContext } from '../../contexts/AuthContext';
+import style from '../Register/Register.module.css';
 
 export default function Register() {
 
@@ -12,6 +13,7 @@ export default function Register() {
         email: '',
         password: '',
         confirmPassword: '',
+        boughtProducts: [],
     }, onRegisterSubmit);
 
     return (
@@ -24,6 +26,7 @@ export default function Register() {
                             <div className="contact_form-container">
                                 <div>
                                     <div>
+                                    <label className={style.label} htmlFor="userName">Username</label>
                                         <input
                                             type="text"
                                             name="username"
@@ -33,6 +36,8 @@ export default function Register() {
                                         />
                                     </div>
                                     <div>
+                                    <label className={style.label} htmlFor="email">Email</label>
+
                                         <input
                                             type="email"
                                             name="email"
@@ -42,6 +47,8 @@ export default function Register() {
                                         />
                                     </div>
                                     <div>
+                                    <label className={style.label} htmlFor="password">Password</label>
+
                                         <input
                                             type="password"
                                             name="password"
@@ -51,6 +58,8 @@ export default function Register() {
                                         />
                                     </div>
                                     <div>
+                                    <label className={style.label} htmlFor="re-Pass">Repeat password</label>
+
                                         <input
                                             type="password"
                                             name="confirmPassword"
