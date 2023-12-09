@@ -26,7 +26,7 @@ export default function Register() {
                             <div className="contact_form-container">
                                 <div>
                                     <div>
-                                    <label className={style.label} htmlFor="userName">Username</label>
+                                    <label className={style.label} htmlFor="userName">Name</label>
                                         <input
                                             type="text"
                                             name="username"
@@ -36,7 +36,7 @@ export default function Register() {
                                         />
                                     </div>
                                     <div>
-                                    <label className={style.label} htmlFor="email">Email</label>
+                                    <label className={style.label} htmlFor="email">Email address</label>
 
                                         <input
                                             type="email"

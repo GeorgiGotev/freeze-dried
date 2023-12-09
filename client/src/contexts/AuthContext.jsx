@@ -27,6 +27,7 @@ export const AuthProvider = ({ children }) => {
     const onRegisterSubmit = async (values) => {
         const { confirmPassword, ...registerData } = values;
         if (confirmPassword !== registerData.password) {
+            console.log('password mismatch');
             return;
         }
 
@@ -42,13 +43,23 @@ export const AuthProvider = ({ children }) => {
     };
 
     const onLogout = async () => {
-        await authService.logout();
+
+        try{
+            await authService.logout();
+        }catch(err){
+            console.log('There is a problem');
+        }
 
         setAuth({});
     };
 
     const onBought = async (productId) => {
-        await auth.boughtProducts.push(productId);
+
+        try{
+            await auth.boughtProducts.push(productId);
+        }catch(err){
+            console.log('There is a problem');
+        }
     };
 
     const contextValues = {

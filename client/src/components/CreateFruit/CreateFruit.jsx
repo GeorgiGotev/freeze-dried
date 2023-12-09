@@ -1,5 +1,6 @@
 import { useFruitContext } from '../../contexts/FruitContext';
 import { useForm } from '../../hooks/useForm';
+import styles from '../CreateFruit/CreateFruit.module.css';
 
 export default function CreateFruit() {
     const { onCreateFruitSubmit } = useFruitContext();
@@ -23,39 +24,43 @@ export default function CreateFruit() {
                             <div className="contact_form-container">
                                 <div>
                                     <div>
+                                        <label className={styles.label} htmlFor="name">Name</label>
                                         <input
                                             type="text"
                                             name="name"
                                             value={values.name}
                                             onChange={changeHandler}
-                                            placeholder="Name"
+                                            placeholder="Banana"
                                         />
                                     </div>
                                     <div>
+                                    <label className={styles.label} htmlFor="imageUrl">Image Url</label>
                                         <input
                                             type="text"
                                             name='imageUrl'
                                             value={values.imageUrl}
                                             onChange={changeHandler}
-                                            placeholder="Image address"
+                                            placeholder="www.somephoto.com"
                                         />
                                     </div>
                                     <div>
+                                    <label className={styles.label} htmlFor="description">Description</label>
                                         <input
                                             type="text"
                                             name='description'
                                             value={values.description}
                                             onChange={changeHandler}
-                                            placeholder="Description"
+                                            placeholder="Information about this fruit"
                                         />
                                     </div>
                                     <div>
+                                    <label className={styles.label} htmlFor="moreInfo">More Info</label>
                                         <input
                                             type="text"
                                             name='moreInfo'
                                             value={values.moreInfo}
                                             onChange={changeHandler}
-                                            placeholder="More info"
+                                            placeholder="Specific information about this product"
                                         />
                                     </div>
                                     <div className="mt-5">

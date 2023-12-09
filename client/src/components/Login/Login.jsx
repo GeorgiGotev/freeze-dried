@@ -28,7 +28,7 @@ export default function Login () {
                                         <label className={style.label} htmlFor="email">Email</label>
                                         <input
                                             type="email"
-                                            placeholder="Email"
+                                            placeholder="*******@abv.bg"
                                             name='email'
                                             value={values.email}
                                             onChange={changeHandler}
@@ -38,7 +38,7 @@ export default function Login () {
                                     <label className={style.label} htmlFor="password">Password</label>
                                         <input
                                             type="password"
-                                            placeholder="Password"
+                                            placeholder="********"
                                             name='password'
                                             value={values.password}
                                             onChange={changeHandler}

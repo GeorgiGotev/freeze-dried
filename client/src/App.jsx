@@ -16,6 +16,7 @@ import CreateFruit from './components/CreateFruit/CreateFruit';
 import OurService from './components/OurService/OurService';
 import EditFruit from './components/EditFruit/EditFruit';
 import Profile from './components/Profile/Profile';
+import { NotFound } from './components/NotFount';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
                         <Route path="/contacts" element={<ContactUs />}></Route>
                         <Route path="/service" element={<OurService />}></Route>
                         <Route path="/logout" element={<Logout />} />
+                        <Route path="*" element={<NotFound />}></Route>
                     </Routes>
                     <Footer />
                 </FruitProvider>
