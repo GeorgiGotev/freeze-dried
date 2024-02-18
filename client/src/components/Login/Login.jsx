@@ -58,9 +58,9 @@ export default function Login () {
                                     </div>
 
                                     <div className="mt-5">
-                                        <button type="submit">send</button>
+                                        <button type="submit">Login</button>
                                     </div>
-                                    <span>If you don't have profile click <Link to="/register">here</Link></span>
+                                    <span>If you don't have profile click <Link to="/register">Register here</Link></span>
                                 </div>
                             </div>
                         </form>

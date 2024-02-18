@@ -142,11 +142,11 @@ export default function Register() {
                                     </div>
 
                                     <div className="mt-5">
-                                        <button type="submit">send</button>
+                                        <button type="submit">Register</button>
                                     </div>
                                     <span>
                                         If you have profile click{' '}
-                                        <Link to="/login">here</Link>
+                                        <Link to="/login">Login</Link>
                                     </span>
                                 </div>
                             </div>
