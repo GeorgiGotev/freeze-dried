@@ -1,6 +1,6 @@
 import { requestFactory } from './requester';
 
-const baseUrl = `http://localhost:3030/users`;
+const baseUrl = `${import.meta.env.VITE_API_URL}/users`;
 
 export const authServiceFactory = (token) => {
     const request = requestFactory(token);

@@ -1,6 +1,6 @@
 import { requestFactory } from './requester';
 
-const url = `http://localhost:3030/data/fruits`;
+const url = `${import.meta.env.VITE_API_URL}/data/fruits`;
 
 export const fruitServiceFactory = (token) => {
     const request = requestFactory(token);
