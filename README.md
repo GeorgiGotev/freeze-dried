@@ -1,8 +1,8 @@
-# freeze-dried
+## freeze-dried
 
-Softuni-ReactJS-Project
+# Softuni-ReactJS-Project
 
-React Softuni App is an application that has been developed for the exam at the end of the React course.
+* React Softuni App is an application that has been developed for the exam at the end of the React course.
 
 Freeze-dried
 The application represents a SPA application where users could see/post/edit/delete/buy fruits. For the purpose of Front-End development it was used React.js with a building tool Vite. For the purpose of storing information and authentication/authorization it was used SoftUni-Practice server which is deployed at Firebase.
