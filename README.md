@@ -28,16 +28,16 @@ Authenticated users (non-owners) can visit the application and are authorized to
 
 ## Routes
 
-/ - Displays home page;
-/catalog - Displays all offers;
-/login - Displays Login page;
-/register - Displays Register page;
-/catalog/:id - Displays specific Fruit's details
-/profile - Displays user's profile data and the offers that have been bought so far;
-/catalog/:id/edit - Displays a form in which the the owner of the fruit could edit the offer's details
-/catalog/:id/delete - Deletes the respective offer (only for owners)
-/catalog/:id/buy - Displays the same fruit with a label that it has been bought already.
-/create - Displays a form in which authenticated users could add a fruit.
+* / - Displays home page;
+* /catalog - Displays all offers;
+* /login - Displays Login page;
+* /register - Displays Register page;
+* /catalog/:id - Displays specific Fruit's details
+* /profile - Displays user's profile data and the offers that have been bought so far;
+* /catalog/:id/edit - Displays a form in which the the owner of the fruit could edit the offer's details
+* /catalog/:id/delete - Deletes the respective offer (only for owners)
+* /catalog/:id/buy - Displays the same fruit with a label that it has been bought already.
+* /create - Displays a form in which authenticated users could add a fruit.
 
 ## How to run the project
 In order to run the project on your own, you need to run the following commands:
