@@ -41,12 +41,14 @@ Authenticated users (non-owners) can visit the application and are authorized to
 
 ## How to run the project
 In order to run the project on your own, you need to run the following commands:
-* for client side:
--npm install
--npm run dev
-* to run the server:
+
+for client side:
+* npm install
+* npm run dev
+To run the server:
+
 run the terminal inside the server directory and use:
--node server.js
+* node server.js
 
 Once the last command has been executed, the terminal will display the port at which you could access the application.
 
