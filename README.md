@@ -1,13 +1,12 @@
-## freeze-dried
-
-# Softuni-ReactJS-Project
+## freeze-dried SoftUni-ReactJS-Project
 
 * React Softuni App is an application that has been developed for the exam at the end of the React course.
 
 Freeze-dried
 The application represents a SPA application where users could see/post/edit/delete/buy fruits. For the purpose of Front-End development it was used React.js with a building tool Vite. For the purpose of storing information and authentication/authorization it was used SoftUni-Practice server which is deployed at Firebase.
 
-Roles
+## Roles
+
 Non-authenticated users can visit the application and are authorized to see and use:
 
 * Register - allows the user to Register and perform authenticated operations afterwards
@@ -30,9 +29,8 @@ Authenticated users (owners) can visit the application and are authorized to see
 * Offer details delete - functionality that allows the user to delete an offer that is under their ownership;
 * Bought offer delete - funcionaliy that allows the buyer to delete the offer from their bought list.
 
-Routes
+## Routes
 
-Routes
 / - Displays home page;
 /catalog - Displays all offers;
 /login - Displays Login page;
@@ -51,8 +49,8 @@ npm run build
 npm run dev
 Once the last command has been exectued, the terminal will display the port at which you could access the application.
 
-#Firebase hosting
+# Firebase hosting
 
-The applications has also been published on a free hosting provided by Firebase. URL: https://testproject-4e7a7.web.app/
+The applications has also been published on a free hosting provided by Firebase. URL: https://freeze-dried-softuni.web.app/
 
 Please note that the application stored on Firebase might differ from the source code in GitHub as we cannot ensure that the latest version will be available as soon as developed.
